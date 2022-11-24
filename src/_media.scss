@@ -1,0 +1,317 @@
+/******************************* media ******************/
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (min-width: 768px) {
+    
+    /* For desktop: */
+    .wellcome .bottom {
+        bottom: -150px
+    }
+    .navbar {
+        padding: 0 1rem;
+    }
+    .navbar .menu {
+        display: flex;
+        // height: 100%;
+    }
+    .menu a {
+        margin: 5px;
+        padding: 5px;
+        display: inherit;
+        text-decoration: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        i {
+            display: none;
+        }
+    }
+    .services .sevices-slider .slide .slid-text {
+        h3 {
+            font-size: 50px;
+        }
+    }
+    .type_container {
+        width: 386px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wellcome .top-left {
+        top: 0 !important
+    }
+    .navbar {
+        .overlay {
+            background: rgba(112, 113, 117, 0.27);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: calc(100% - 50px);
+            width: 100%;
+            display: none
+        }
+    }
+    .toggle-active {
+        background: #fff !important;
+        
+    }
+    .navbar .menu {
+        width: 250px;
+        background: #ffffff;
+        // text-align: center;
+        opacity: 0;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 90;
+        top: 48px;
+        padding: 30px;
+        box-shadow: 0 10px 10px 0 rgba(37, 37, 37, 0.12);
+        transform: matrix(1, 0, 0.7, 1, 1000, 0);
+        -webkit-transform: matrix(1, 0, 0.7, 1, 1000, 0);
+        -moz-transform: matrix(1, 0, 0.7, 1, 1000, 0);
+        -ms-transform: matrix(1, 0, 0.7, 1, 1000, 0);
+        -o-transform: matrix(1, 0, 0.7, 1, 1000, 0);
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    .scrolled {
+        .overlay , .menu{
+            top: 80px
+        }
+    }
+    .menu a {
+        padding: 5px;
+        border-radius: 5px;
+        transition: all .2s ease-in-out;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        display: inherit;
+        text-decoration: none;
+        transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+    }
+    .click {
+        position: absolute;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .click span {
+        height: 3px;
+        width: 25px;
+        display: inline-block;
+        position: absolute;
+        margin: -4px 6.5px;
+        border-radius: 15px;
+        background: #9c9eb5;
+
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+    .click span:nth-of-type(1) {
+        right: 2px;
+        top: 13px;
+        width: 18px;
+    }
+    .click span:nth-of-type(2) {
+        top: 22px;
+        left: 0;
+    }
+    .click span:last-child {
+        top: 30px;
+        left: 0;
+    }
+    #toggle:checked~.menu {
+        opacity: 1;
+        transform: none;
+    }
+    #toggle:checked~.overlay {
+     display: block
+    }
+    .click:hover span:nth-of-type(1) {
+        top: 11px;
+    }
+    .click:hover span:nth-of-type(3) {
+        top: 33px;
+    }
+    #toggle:checked~.click span:nth-of-type(2) {
+        background: transparent !important;
+    }
+    #toggle:checked~.click span:nth-of-type(1) {
+        top: 22px;
+        left: 0px;
+        width: 25px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+    }
+    #toggle:checked~.click span:last-child {
+        top: 22px;
+        left: 0px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+    }
+    /*      informaion */
+    .moree .basic {
+        text-align: center;
+    }
+    /*  information */
+    /**************** wellcome ********/
+    .wellcome .bottom {
+        bottom: 0px
+    }
+    .wellcome .top-left {
+        top: 0px
+    }
+    .wellcome .social .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .wellcome .social .icon a {
+        font-size: 25px;
+    }
+    /**************** end wellcome *************/
+    /*************** gallery */
+    .gallery {
+        margin-top: 150px;
+    }
+    /***************** end gallery *****/
+    /******************* services **********/
+    .services .carousel .carousel-item i {
+        height: 130px;
+        width: 130px;
+        line-height: 130px;
+        font-size: 75px
+    }
+    .services h5 {
+        font-size: 16px;
+    }
+    .services .carousel .carousel-item p {
+        padding-top: 0
+    }
+    .services .sevices-slider .slide img {
+        height: 100%
+    }
+    .services .sevices-slider .slide .slid-text {
+        margin-top: 0
+    }
+    /******************* end services **********/
+    .signup {
+        svg {
+            height: 100px;
+            width: 100px
+        }
+        .signup-content {
+            h1 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            margin-left: 10px;
+            margin-right: 10px;
+            .signup-input {
+                width: 100%;
+            }
+            .custom-input {
+                width: 95%;
+                label {
+                    left: 5%;
+                    font-size: 14px;
+                }
+                input:focus+label {
+                    left: 5%;
+                }
+            }
+            textarea {
+                width: 90%;
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+    }
+    .moree {
+        margin: 40px 15px
+    }
+    .wellcome .hh2,
+    .wellcome {
+        font-size: 33px;
+    }
+    .services .sevices-slider .slide .slide-text {
+        margin-top: 0
+    }
+    footer {
+        font-size: 14px
+    }
+    .type_container {
+        width: 300px;
+    }
+    .job_title,
+    .type_icon {
+        font-size: 28px
+    }
+    .footer {
+        .content {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #my-tabs li {
+        padding: 5px;
+        font-size: 12px
+    }
+    .type_container {
+        width: 250px;
+    }
+    .job_title,
+    .type_icon {
+        font-size: 24px
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 1245px) {}
+
+
+/********************************* media ******************/

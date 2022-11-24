@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="animate_container">
+    <div class="router_container" [@routeranimate]="myOutlet.activatedRouteData['index']">
+            <router-outlet #myOutlet="outlet"></router-outlet>
+    </div>
+
+</div>
+<!-- <div class="connection_container">
+    <div class="message">
+            <p> Lorem ipsum, dolor sit amet consectetur.</p>
+    </div>
+    
+    <span>X</span>
+</div> -->
+
+<div class="connection_container online"  *ngIf="connectionStatus === 'online'"   [ngClass]="status ? 'show' : 'hide'">
+        <div class="message">
+                <span  (click)="hideShow()" ><i class="far fa-times-circle"></i></span>
+                <p>{{connectionStatusMessage}}</p>
+        </div>
+        
+      
+    </div>
+    <div class="connection_container offline"   *ngIf="connectionStatus === 'offline'"  [ngClass]="status ? 'show' : 'hide'">
+            <div class="message">
+                    <p>{{connectionStatusMessage}}</p>
+                    <span  (click)="hideShow()" ><i class="far fa-times-circle"></i></span>
+            </div>
+            
+           
+        </div>
+ 
+
+<!-- <div *ngIf="connectionStatus === 'online'" class="online">
+    <span>{{connectionStatusMessage}}</span>
+  </div> -->
+  
+  <!-- <div *ngIf="connectionStatus === 'offline'" class="offline">
+    <span>{{connectionStatusMessage}}</span>
+  </div> -->
+<app-footer></app-footer>

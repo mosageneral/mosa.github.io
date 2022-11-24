@@ -1,0 +1,110 @@
+
+$firt_color: #6371fc;
+$second_color: #29c0ff;
+$grey_color: #2d4057;
+.view_container {
+    margin-top: 100px;
+
+    .project_info {
+        background: #fdfdfd;
+   overflow: hidden;
+    // border-radius: 10px;
+    box-shadow: 5px 5px 15px 0px rgba(99, 113, 252, 0.22);
+    .wrap_img {
+        height: 82px;
+        overflow: hidden;
+        display: block;
+        width: 140px;
+        display: block;
+        margin: 10px auto;
+        // border-radius: 10px;
+        box-shadow: 5px 5px 12px 1px rgba(99, 113, 252, 0.14);
+        img {
+         width: 100%;
+        }
+    }
+
+    .texts {
+        padding: 10px;
+    }
+    .title  {
+        color: $firt_color;
+        font-weight: 600;
+        text-align: center;
+    }
+    .date {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+    justify-content: space-between;
+        .from, .to {
+            margin-bottom: 0;
+color: $grey_color;
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: #777474;
+            }
+        }
+    }
+    .description {
+        color: $grey_color;
+    }
+    .portfolio_btn {
+        margin: 30px auto 15px auto;
+        display: block;
+        max-width: 150px;
+        text-align: center;
+    }
+    }
+    .right-view-content {
+        img {
+            width: 100%;
+            // border-radius: 10px;
+            box-shadow: 5px 5px 12px 1px rgba(99, 113, 252, 0.14);
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .view_container_content {
+        .left-view-content {
+            margin: 0;
+            padding: 15px;
+            width: calc(100vw / 3);
+            position: fixed;
+            height: 100vh;
+            overflow: auto;
+            z-index: 1;
+            // background: yellow
+        }
+        .right-view-content {
+            margin-left: calc(100vw / 3);
+            // background: red;
+            padding: 15px;
+        }
+    }
+    
+}
+@media (max-width: 991px){
+    .view_container_content {
+        .left-view-content {
+            margin: 0;
+            padding: 15px;
+            width: 100%;
+            position: unset;
+            height: auto;
+            overflow: unset;
+            z-index: 1;
+            // background: green
+        }
+        .right-view-content {
+            margin-left: 0;
+            // background: red;
+            padding: 15px;
+            padding-top: 15px;
+        }
+    }
+    
+}

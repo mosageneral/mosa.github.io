@@ -1,0 +1,33 @@
+<section class="services_container">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+                <div class="global_card">
+                        <h4 class="title"><i class="fas fa-check-double pr-2"></i>Services</h4>
+                        <hr>
+                  
+                        
+                        <p>I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using and Assist with production of clean and functional design.</p>
+                
+                </div>
+        </div>
+        <div class="col-md-8">
+                <div class="row">
+                        <div class="col-md-4" *ngFor="let service of allServices">
+                            <div class="service_item">
+                                <span class="icon" [innerHTML]="service.serviceIcon"></span>
+                                <div class="overlay"></div>
+                                    <div class="content">
+                                        <h5 class="text">{{ service.serviceTitle }}</h5>
+                                        <p class="text">{{ service.serviceDesc }}</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+
+</div>
+
+</section>

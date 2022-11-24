@@ -1,0 +1,55 @@
+<!-- <div class="Portfolio_container">
+    <div class="container">
+        <h4><i class="fas fa-layer-group pr-2"></i>Portfolio</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio_item">
+                    <img src="../../../assets/imgs/portfolio/menatech.jpg" alt="mena tech website">
+                    <div class="title"><h6>MenaTech Ecosystem</h6></div>
+                    <div class="overview">
+                            <a href="" class="portfolio_btn"><i class="fas fa-info-circle pr-2"></i>more details</a>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="Portfolio_container">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="global_card">
+                            <h4><i class="fas fa-layer-group pr-2"></i>Portfolio</h4>
+                            <hr>
+                         <p>Have a look around my Portfolio to get an idea of exactly what it is I can do. Here is some works showcase, ِand I try to learn and do more and more.</p>
+                       
+                      </div>
+                      <div class="global_card mt-3">
+                      
+                     <p>If I want to take a look at my designs in graphic design and Brands That I have been doing for many companies as a freelancer.</p>
+                        <button type="button" routerLink="/Portfolio/gallery" class="btn btn-outline-primary d-flex m-auto">Go To Galley</button>
+                   
+                  </div>
+            </div>
+            <div class="col-md-8">
+
+                    <div class="row">
+                            <div class="col-md-6" *ngFor="let project of allProjects; index as i">
+                                <div class="portfolio_item">
+                                        
+                                    <img [src]="project.fullImg" [alt]="project.title">
+                                    <div class="title"><h6>{{ project.title }}</h6></div>
+                                    <div class="overview">
+                                            <a  [routerLink]="['/Portfolio/view', i, project.pageparm]" class="portfolio_btn"><i class="fas fa-info-circle pr-2"></i>more details</a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+          
+        </div>
+    </div>

@@ -1,0 +1,36 @@
+<div class="view_container">
+            <div class="view_container_content">
+                <div class="left-view-content">
+<div class="project_info">
+        <span class="wrap_img"><img [src]="projectItem.fullImg" [alt]="projectItem.title"></span>
+    
+    <div class="texts">
+            <h5 class="title">{{ projectItem.title }}</h5>
+            <hr>
+            <div class="date">
+                <p class="from"><span class="pr-2">From :</span>{{ projectItem.dateFrom }}</p>
+                <p class="to"><span class="pr-2">To :</span>{{ projectItem.dateTo }}</p>
+            </div>
+            <hr>
+          
+          
+          
+            <div class="tags" *ngIf="projectItem.technologies">
+                    <p class="tags_title">Technologies Used :</p>
+                    <span  *ngFor="let technoligy of projectItem?.technologies" class="badge">{{technoligy}}</span> 
+
+                </div>
+             
+            <a [href]="projectItem.liveDemo" class="portfolio_btn" target="_blank">visit <i class="fas ml-2 fa-external-link-alt"></i></a>
+    </div>
+</div>
+                </div>
+                <div class="right-view-content">
+                    <div class="global_card">
+                            <p class="description">{{ projectItem.description }}</p>
+                    </div>
+                        <img [src]="projectItem.fullImg" [alt]="projectItem.title">
+                </div>
+            </div>
+
+</div>

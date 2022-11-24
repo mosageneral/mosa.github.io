@@ -1,0 +1,25 @@
+<!-- start nav -->
+<nav class="navbar" id="navbar" [class.toggle-active]="isChecked" [class.in-home]="currentcom !=='/'" [class.scrolled]="scrolled==false">
+          <div routerLink="/" style='    outline: none;' class="logo"><span id="brand" class="brand">Mosa Hasn</span><span class="lan gradient" style="display: none;"><a href="ar/index.html">ع</a></span></div>
+          <input type="checkbox" id="toggle"  [(ngModel)]="isChecked">
+          <label for="toggle" class="click">
+          <span class="background1"></span>
+          <span class="background1"></span>
+          <span class="background1"></span>
+        </label>
+        <!-- <span class="beta">Beta Version</span> -->
+       <div class="overlay"  (click)="isChecked = !isChecked"> </div>
+              <div class="menu">
+                      <a href="#" (click)="isChecked = !isChecked" class="menu-item"  [routerLinkActive]="['active']"  [routerLinkActiveOptions]="{exact: true}" id="home" routerLink="/"><i class="fas fa-home pr-2"></i>Home</a>
+                      <a href="#" (click)="isChecked = !isChecked" class="menu-item"  [routerLinkActive]="['active']" id="moree" routerLink="/skills" ><i class="fas fa-tasks pr-2"></i>Skills</a>
+                      <!-- <a href="#" (click)="isChecked = !isChecked" class="menu-item"  [routerLinkActive]="['active']" routerLink="/Portfolio"><i class="fas fa-layer-group pr-2"></i>Portfolio</a> -->
+                      <a href="#" (click)="isChecked = !isChecked" class="menu-item"  [routerLinkActive]="['active']" routerLink="/services" id="Services"><i class="fas fa-check-double pr-2"></i>Services</a>
+                      <a href="#" (click)="isChecked = !isChecked" class="menu-item"  [routerLinkActive]="['active']" routerLink="/experience" id="Experience"><i class="fas fa-briefcase pr-2"></i>Experience</a>
+                  </div>
+      
+          <div class="progress-page">
+              <div class="prog background1" id="myprog"></div>
+          </div>
+      </nav>
+      
+      <!-- end nav -->
